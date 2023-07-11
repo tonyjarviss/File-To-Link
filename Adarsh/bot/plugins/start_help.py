@@ -64,7 +64,7 @@ async def start(b, m):
         await m.reply_text(            
             text=msg_text.format(file_name, file_size, stream_link),
             
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ⚡", url=stream_link)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ⚡", url=stream_link2)]])
         )
 
 
