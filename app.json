@@ -1,6 +1,6 @@
 {
-  "name": "Adarsh-",
-  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @adarshgoel",
+  "name": "FILE-TO-LINK",
+  "description": "A Pyrogram Telegram bot to Stream Telegram files to web.",
   "keywords": [
       "telegram",
       "stream",
@@ -13,10 +13,10 @@
       "media",
       "bot"
     ],
-  "repository": "https://github.com/adarsh-goel/-pro/",
+  "repository": "https://github.com/Itz-JEOL/File-To-Link/",
   "success_url": "/",
-  "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
-  "website": "http://adarsh.eu.org",
+  "logo": "https://graph.org/file/3421895411af26c3da183.jpg",
+  "website": "http://jeol.tech",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
@@ -48,12 +48,6 @@
           "description": "Put IDs of Banned Channels where bot will not work. You can add multiple IDs & separate with Space.",
           "required": false
       },
-      "UPDATES_CHANNEL": {
-          "description": "Put a Public Channel Username  without @, so every user have to Join that channel to use the bot. Must add bot to channel as Admin to work properly.IF DONT WANT KEEP VALUE AS None",
-          "value":"None",
-          "required": false
-          
-      },
       "OWNER_USERNAME": {
           "description": "Enter your username without @  example  adarsh."
       },
@@ -80,11 +74,6 @@
           "value": "True",
           "required": false
       },
-       "MY_PASS": {
-          "description": "Leave empty if dont need password else enter Your Password",
-          "value": "None",
-          "required": false
-      },
       "BIND_ADRESS": {
           "description": "Read the readme for more info about this var  Leave Empty  For heroku",
           "required": false
@@ -105,7 +94,7 @@
   "formation": {
       "web": {
           "quantity": 1,
-          "size": "free"
+          "size": "eco"
       }
   }
 }

@@ -8,5 +8,4 @@ dnspython
 apscheduler
 requests
 psutil
-pyromod
-colorama
+pyromod==1.5

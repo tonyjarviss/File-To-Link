@@ -1,31 +1,15 @@
-![GitHub contributors](https://img.shields.io/github/contributors/adarsh-goel/filestreambot-pro?style=flat&color=green)
-![GitHub repo size](https://img.shields.io/github/repo-size/adarsh-goel/filestreambot-pro?color=green)
-![GitHub](https://img.shields.io/github/license/adarsh-goel/filestreambot-pro?color=green)
 
-
-<h1 align="center"></h1>
-<p align="center"> 
-  <img src="https://socialify.git.ci/adarsh-goel/filestreambot-pro/image?description=1&descriptionEditable=A%20very%20fast%20file%20streaming%20bot%20used%20for%20streaming%20and%20downloading%20movies&font=Source%20Code%20Pro&forks=1&issues=1&language=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F88939380%2F137127129-a86fc939-2931-4c66-b6f6-b57711a9eab7.png&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark" alt="Cover Image" width="650">
-  </a>
   
  <p align="center">
     A Telegram bot to turn all media and documents files to instant direct download and stream link .
     <br />
    </strong></a>
-    <br />
-    <a href="https://github.com/adarsh-goel/pro/issues">Report a Bug</a>
-    |
-    <a href="https://github.com/adarsh-goel/filestreambot-pro/issues">Request Feature</a>
-  </p>
+
 
 
 <hr>
 
-#### Please give a ⭐ to this repository to appreciate my efforts and follow me so you that you get to know whenever I release a new Project!
-
-#### If you like my work and would like to hire/sponsor me [click here](https://t.me/+KvjFjOWicuZmOTQx).
-
-<hr>
+## Please Follow me so you know whenever I release a new Project!❤️‍🔥
 
 ## 🍁 About This Bot :
 
@@ -33,11 +17,34 @@
 
 </p>
 <p align='center'>
-    This bot will give you streamable download links for Telegram files without the need of waiting till the download completes.
+    This bot will give you stream links for Telegram files without the need of waiting till the download completes
 </p>
 
 
+## ♢ How to make your own :
+
+
+#### ♢ Click on This Drop-down and get more details
 <br>
+<details>
+  <summary><b>Deploy on Heroku:</b></summary>
+
+
+<a href="https://youtu.be/lBJZdaA04Ig"><img src="https://img.shields.io/badge/Watch%20Tutorial%20On%20YouTube-red.svg?logo=Youtube"></a>                     
+
+<h4> So Follow Above Video 👆 and then deploy other wise bot won't work</h4>
+
+Press the below button to Fast deploy on Heroku/Raiwlay
+Either you could locally host or deploy on [Heroku](https://heroku.com)
+### 💜 Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SiDK-FM/PRO)
+
+<br>
+
+
+then goto the <a href="#mandatory-vars">variables tab</a> for more info on setting up environmental variables. </details>
+
 <details>
   <summary><b>Features:</b></summary>
   
@@ -58,42 +65,10 @@
 💥Custom Domain support. <br>
 💥All unwanted code removed. <br>
 💥A lot more tired of writing check out by deploying it. 
-</details>
-<details>
-  <summary><b>Host it on VPS Locally :</b></summary>
-  <details>
-  <summary><b>Deploy on Ubuntu<b></summary>
-  If you are on Ubuntu, there's a 10 times easier way to deploy this bot. Just copy the command below and you're good to go.
-  
-  ```sh
-  apt-get update -y && apt-get upgrade -y && apt-get install curl -y && curl https://raw.githubusercontent.com/adarsh-goel/FileStreamBot-pro/main/script.sh -o script.sh && bash script.sh
-  ```
-
-  and to stop the whole bot,
- do <kbd>CTRL</kbd>+<kbd>C</kbd>
-
-  </details>
-
-  <details>
-  <summary><b>Deploy on Windows or other plataform<b></summary>
-  
-  You should make sure you have Python 3.6+ installed on your PC, then clone this repo and run the following commands in a terminal:
-
-```py
-git clone https://github.com/adarsh-goel/filestreambot-pro
-cd filestreambot-pro
-virtualenv -p /usr/bin/python3 venv
-. ./venv/bin/activate
-pip install -r requirements.txt
-python3 -m Adarsh
-```
-
 
 
 and to stop the whole bot,
  do <kbd>CTRL</kbd>+<kbd>C</kbd>
-
- </details>
 
 Setting up things
 
@@ -169,5 +144,6 @@ Bot also Supported with Channels. Just add bot Channel as Admin. If any new file
 
 ### Credits : 
 
-- [Me](https://github.com/adarsh-goel)
+- [Adarsh Goel](https://github.com/adarsh-goel)
+- [PROFFESOOR](https://github.com)
 - Everyone In This Journey !
