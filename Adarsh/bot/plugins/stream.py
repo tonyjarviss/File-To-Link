@@ -43,7 +43,7 @@ async def private_receive_handler(c: Client, m: Message):
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("◉ sᴛʀᴇᴀᴍ ◉", url=stream_link), #Stream Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("◉ sᴛʀᴇᴀᴍ ◉", url=stream_link2), #Stream Link
                                                 InlineKeyboardButton('● ᴅᴏᴡɴʟᴏᴀᴅ ●', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
@@ -51,36 +51,6 @@ async def private_receive_handler(c: Client, m: Message):
         await asyncio.sleep(e.x)
         await c.send_message(chat_id=Var.BIN_CHANNEL, text=f"Gᴏᴛ FʟᴏᴏᴅWᴀɪᴛ ᴏғ {str(e.x)}s from [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n\n**𝚄𝚜𝚎𝚛 𝙸𝙳 :** `{str(m.from_user.id)}`", disable_web_page_preview=True)
 
-"""@StreamBot.on_callback_query(filters.regex(r'stream'))
-async def stream_callback_handler(c: Client, query: CallbackQuery, m: Message):
-    try:
-        data = query.data
-        log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        if query.data == "stream":
-            buttons = [
-                [
-                    InlineKeyboardButton('ʙʀᴏᴡsᴇʀ', url=stream_link),
-                    InlineKeyboardButton('ᴍx ᴘʟᴀʏᴇʀ', url='intent:online_link#Intent;package=com.mxtech.videoplayer.ad;S.title=Power by @YourDemandZone ;end')
-                ],
-                [
-                    InlineKeyboardButton('ᴠʟᴄ & ᴠᴅx', url='vlc://online_link'),
-                    InlineKeyboardButton('ᴘʟᴀʏɪᴛ', url='playit://playerv2/video?url=online_link')
-                ],
-                [
-                    InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ', url=online_link),
-                    InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url='htps://t.me/Mr_SpidyBot')
-                ],
-                [
-                    InlineKeyboardButton('ᴊᴏɪɴ ʏᴅᴢᴏɴᴇ', url='htps://t.me/YourDemandZone')
-                ]
-            ]
-            reply_markup = InlineKeyboardMarkup(buttons)
-            
-            await query.message.reply_text("Choose an option:", reply_markup=reply_markup)
-    except Exception as e:
-        print(e)"""
 @StreamBot.on_message(filters.channel & ~filters.group & (filters.document | filters.video | filters.photo)  & ~filters.forwarded, group=-1)
 async def channel_receive_handler(bot, broadcast):
     if int(broadcast.chat.id) in Var.BANNED_CHANNELS:
@@ -101,7 +71,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("◉ sᴛʀᴇᴀᴍ ◉", url=stream_link),
+                    [InlineKeyboardButton("◉ sᴛʀᴇᴀᴍ ◉", url=stream_link2),
                      InlineKeyboardButton('● ᴅᴏᴡɴʟᴏᴀᴅ ●', url=online_link)] 
                 ]
             )
