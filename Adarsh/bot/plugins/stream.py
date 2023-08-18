@@ -14,13 +14,9 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.name)
 
-
 MY_PASS = os.environ.get("MY_PASS", None)
 pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
-
-
-
 
 @StreamBot.on_message((filters.private) & (filters.document | filters.video | filters.audio | filters.photo) , group=4)
 async def private_receive_handler(c: Client, m: Message):
