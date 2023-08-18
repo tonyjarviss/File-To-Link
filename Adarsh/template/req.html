@@ -293,8 +293,7 @@ YOUR ADS
 
     function playOnlineMx() {
         const finalLinkUrl = finalUrl;
-        const mxUrl = `intent:${finalLinkUrl}#Intent;package=com.mxtech.videoplayer.ad;S.title={{file_name}};end`;
-        window.location.href = mxUrl;
+        const mxUrl = `intent:${finalLinkUrl}#Intent;package=com.mxtech.videoplayer.ad;S.title=${file_name};end`;
     }
     
     function playOnlinesp() {
@@ -305,8 +304,7 @@ YOUR ADS
     
     function playOnlinepi() {
         const finalLinkUrl = finalUrl;
-        const piUrl = `playit://playerv2/video?url=${finalLinkUrl}&amp;title={{file_name}}`;
-        window.location.href = piUrl;
+        const piUrl = `playit://playerv2/video?url=${finalLinkUrl}&amp;title=${file_name}`;
     }
 
     function openTgBot() {
