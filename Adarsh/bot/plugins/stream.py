@@ -59,19 +59,26 @@ async def stream_callback_handler(c: Client, query: CallbackQuery, m: Message):
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         if query.data == "stream":
-            buttons = [[
-                 InlineKeyboardButton('ʙʀᴏᴡsᴇʀ', url=stream_link),
-                 InlineKeyboardButton('ᴍx ᴘʟᴀʏᴇʀ', url='intent:online_link#Intent;package=com.mxtech.videoplayer.ad;S.title=Power by @YourDemandZone ;end')
-            ],  [
-                 InlineKeyboardButton('ᴠʟᴄ & ᴠᴅx', url='vlc://online_link'),
-                 InlineKeyboardButton('ᴘʟᴀʏɪᴛ', url='playit://playerv2/video?url=online_link')
-            ],[
-                InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ', url=online_link),
-                InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url='htps://t.me/Sujan_Ch')
-            ],[
-                InlineKeyboardButton('ᴊᴏɪɴ ʏᴅᴢᴏɴᴇ', url='htps://t.me/Sujan_BotZ')
-            ]]
+            buttons = [
+                [
+                    InlineKeyboardButton('ʙʀᴏᴡsᴇʀ', url=stream_link),
+                    InlineKeyboardButton('ᴍx ᴘʟᴀʏᴇʀ', url='intent:online_link#Intent;package=com.mxtech.videoplayer.ad;S.title=Power by @YourDemandZone ;end')
+                ],
+                [
+                    InlineKeyboardButton('ᴠʟᴄ & ᴠᴅx', url='vlc://online_link'),
+                    InlineKeyboardButton('ᴘʟᴀʏɪᴛ', url='playit://playerv2/video?url=online_link')
+                ],
+                [
+                    InlineKeyboardButton('ᴅᴏᴡɴʟᴏᴀᴅ', url=online_link),
+                    InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url='htps://t.me/Mr_SpidyBot')
+                ],
+                [
+                    InlineKeyboardButton('ᴊᴏɪɴ ʏᴅᴢᴏɴᴇ', url='htps://t.me/YourDemandZone')
+                ]
+            ]
             reply_markup = InlineKeyboardMarkup(buttons)
+            
+            await query.message.reply_text("Choose an option:", reply_markup=reply_markup)
     except Exception as e:
         print(e)"""
 @StreamBot.on_message(filters.channel & ~filters.group & (filters.document | filters.video | filters.photo)  & ~filters.forwarded, group=-1)
