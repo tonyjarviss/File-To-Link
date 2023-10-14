@@ -26,11 +26,11 @@ async def start(b, m):
     if usr_cmd == "/start":
         await m.reply_photo(
             photo="https://graph.org/file/d1aa884d79172a1f5587c.jpg",
-            caption="**ʜᴇʟʟᴏ...⚡\n\nɪᴀᴍ ᴀ sɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.**\n\n**ᴜsᴇ /help ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛsɪʟs\n\nsᴇɴᴅ ᴍᴇ ᴀɴʏ ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴛᴏ sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀᴢ...**",
+            caption="**Hello...⚡\n\nI Am A Simple Telegram File/Video To Permanent Download Link And Stream Link Generator Bot.**\n\n**Use /help For More Details\n\nSend Me Any Video/File To See My Power...**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Sujan_BotZ"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/FilmyHub_Adda")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/Sujan_Ch")]
+                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Madflix_Bots"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/MadflixBots_Support")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/CallAdminRobot")]
                 ]
             ),
             
@@ -60,11 +60,11 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.id)
 
-        msg_text = "**yᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n<b>❖ Sujan_BotZ</b>**"
+        msg_text = "**Your Link Is Generated...⚡\n\n📧 File Name :-\n{}\n {}\n\n💌 Download Link :- {}\n\n♻️ This Link Is Permanent And Won't Get Expired ♻️\n\n<b>❖ Madflix_Bots</b>**"
         await m.reply_text(            
             text=msg_text.format(file_name, file_size, stream_link),
             
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ⚡", url=stream_link2)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ Download Now ⚡", url=stream_link2)]])
         )
 
 
@@ -84,8 +84,8 @@ async def help_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Sujan_BotZ"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/FilmyHub_Adda")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/Sujan_Ch")]
+                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Madflix_Bots"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/MadflixBots_Support")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/CallAdminRobot")]
                 ]
             ),
             
@@ -105,20 +105,20 @@ async def about_handler(bot, message):
 
 <b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
 ┃
-┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : ғɪʟᴇ ᴛᴏ ʟɪɴᴋ
-┣⪼<b>ᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/Sujan_BotZ'>Bot Updates</a></b>
-┣⪼<b>sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/FilmyHub_Adda'>Support</a></b>
-┣⪼<b>sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
-┣⪼<b>ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
-┣⪼<b>ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
+┣⪼<b>Bᴏᴛ Nᴀᴍᴇ : ғɪʟᴇ ᴛᴏ ʟɪɴᴋ
+┣⪼<b>Uᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/Madflix_Bots'>Bot Updates</a></b>
+┣⪼<b>Sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/MadflixBots_Support'>Support</a></b>
+┣⪼<b>Sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
+┣⪼<b>Lɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
+┣⪼<b>Lᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
 ┃
 <b>╰━━━━━━━〔ᴘʟᴇᴀsʀ sᴜᴘᴘᴏʀᴛ〕</b>""",
   
         
         reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Sujan_BotZ"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/FilmyHub_Adda")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/Sujan_Ch")]
+                    [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Madflix_Bots"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/MadflixBots_Support")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/CallAdminRobot")]
                 ]
             ),
             
