@@ -30,7 +30,7 @@ async def start(b, m):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Madflix_Bots"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/MadflixBots_Support")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/CallAdminRobot")]
+                    [InlineKeyboardButton("👨‍💻 DEVELOPER 👨‍💻", url="https://t.me/CallAdminRobot")]
                 ]
             ),
             
@@ -79,13 +79,13 @@ async def help_handler(bot, message):
               
     await message.reply_photo(
             photo="https://graph.org/file/d1aa884d79172a1f5587c.jpg",
-            caption="**┣⪼ sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛʜᴇɴ ɪ ᴡɪʟʟ ʏᴏᴜ ᴘᴇʀᴍᴀɴᴇɴᴛ sʜᴀʀᴇᴀʙʟᴇ ʟɪɴᴋ ᴏғ ɪᴛ...\n\n┣⪼ ᴛʜɪs ʟɪɴᴋ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴏʀ ᴛᴏ sᴛʀᴇᴀᴍ ᴜsɪɴɢ ᴇxᴛᴇʀɴᴀʟ ᴠɪᴅᴇᴏ ᴘʟᴀʏᴇʀs ᴛʜʀᴏᴜɢʜ ᴍʏ sᴇʀᴠᴇʀs.\n\n┣⪼ ғᴏʀ sᴛʀᴇᴀᴍɪɴɢ ᴊᴜsᴛ ᴄᴏᴘʏ ᴛʜᴇ ʟɪɴᴋ ᴀɴᴅ ᴘᴀsᴛᴇ ɪᴛ ɪɴ ʏᴏᴜʀ ᴠɪᴅᴇᴏ ᴘʟᴀʏᴇʀ ᴛᴏ sᴛᴀʀᴛ sᴛʀᴇᴀᴍɪɴɢ.\n\n┣⪼ ᴛʜɪs ʙᴏᴛ ɪs ᴀʟsᴏ sᴜᴘᴘᴏʀᴛ ɪɴ ᴄʜᴀɴɴᴇʟ. ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ʀᴇᴀʟᴛɪᴍᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴏʀ ᴇᴠᴇʀʏ ғɪʟᴇs/ᴠɪᴅᴇᴏs ᴘᴏsʏ../\n\n┣⪼ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ :- /about\n\n\nᴘʟᴇᴀsᴇ sʜᴀʀᴇ ᴀɴᴅ sᴜʙsᴄʀɪʙᴇ**", 
+            caption="**┣⪼ Send Me Any File/Video Then I Will You Permanent Shareable Link Of It...\n\n┣⪼ This Link Can Be Used To Download Or To Stream Using External Video Players Through My Servers.\n\n┣⪼ For Streaming Just Copy The Link And Paste It In Your Video Player To Start Streaming.\n\n┣⪼ This Bot Is Also Support In Channel. Add Me To Your Channel As Admin To Get Realtime Download Link For Every Files/Videos Post../\n\n┣⪼ For More Information :- /about\n\n\nPlease Share And Support**", 
   
         
         reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Madflix_Bots"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/MadflixBots_Support")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/CallAdminRobot")]
+                    [InlineKeyboardButton("👨‍💻 DEVELOPER 👨‍💻", url="https://t.me/CallAdminRobot")]
                 ]
             ),
             
@@ -101,24 +101,24 @@ async def about_handler(bot, message):
         )
     await message.reply_photo(
             photo="https://graph.org/file/d1aa884d79172a1f5587c.jpg",
-            caption="""<b>sᴏᴍᴇ ʜɪᴅᴅᴇɴ ᴅᴇᴛᴀɪʟs😜</b>
+            caption="""<b>Some Hidden Details 😁</b>
 
-<b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
+<b>╭━━━━━━━〔File To Link Bot〕━━━━━━━</b>
 ┃
-┣⪼<b>Bᴏᴛ Nᴀᴍᴇ : ғɪʟᴇ ᴛᴏ ʟɪɴᴋ
-┣⪼<b>Uᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/Madflix_Bots'>Bot Updates</a></b>
-┣⪼<b>Sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/MadflixBots_Support'>Support</a></b>
-┣⪼<b>Sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
-┣⪼<b>Lɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
-┣⪼<b>Lᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
+┣⪼<b>Bᴏᴛ Nᴀᴍᴇ</b> : File To Link
+┣⪼<b>Updates</b> : <a href='https://t.me/Madflix_Bots'>Bot Updates</a>
+┣⪼<b>Support</b> : <a href='https://t.me/MadflixBots_Support'>Bot Support</a>
+┣⪼<b>Server</b> : Heroku
+┣⪼<b>Library</b> : Pyrogram
+┣⪼<b>Language</b> : Python 3
 ┃
-<b>╰━━━━━━━〔ᴘʟᴇᴀsʀ sᴜᴘᴘᴏʀᴛ〕</b>""",
+<b>╰━━━━━━━━〔Please Support〕━━━━━━━━</b>""",
   
         
         reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⚡ UPDATES ⚡", url="https://t.me/Madflix_Bots"), InlineKeyboardButton("⚡ SUPPORT ⚡", url="https://t.me/MadflixBots_Support")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/CallAdminRobot")]
+                    [InlineKeyboardButton("👨‍💻 DEVELOPER 👨‍💻", url="https://t.me/CallAdminRobot")]
                 ]
             ),
             
