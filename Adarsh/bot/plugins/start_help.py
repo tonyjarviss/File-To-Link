@@ -103,7 +103,7 @@ async def about_handler(bot, message):
             photo="https://graph.org/file/d1aa884d79172a1f5587c.jpg",
             caption="""<b>Some Hidden Details 😁</b>
 
-<b>╭━━━━━━━〔File To Link Bot〕━━━━━━━</b>
+<b>╭━━━━━━━〔File To Link Bot〕</b>
 ┃
 ┣⪼<b>Bᴏᴛ Nᴀᴍᴇ</b> : File To Link
 ┣⪼<b>Updates</b> : <a href='https://t.me/Madflix_Bots'>Bot Updates</a>
@@ -112,7 +112,7 @@ async def about_handler(bot, message):
 ┣⪼<b>Library</b> : Pyrogram
 ┣⪼<b>Language</b> : Python 3
 ┃
-<b>╰━━━━━━━━〔Please Support〕━━━━━━━━</b>""",
+<b>╰━━━━━━━━〔Please Support〕</b>""",
   
         
         reply_markup=InlineKeyboardMarkup(
