@@ -1,4 +1,4 @@
-# (c) adarsh-goel
+# (c) Jishu Developer
 
 import asyncio
 import logging
@@ -21,7 +21,7 @@ async def initialize_clients():
             print(f"Starting - Client {client_id}")
             if client_id == len(all_tokens):
                 await asyncio.sleep(2)
-                print("This will take some time, please wait...")
+                print("This Will Take Some Time, Please Wait...")
             client = await Client(
                 name=str(client_id),
                 api_id=Var.API_ID,
@@ -34,7 +34,7 @@ async def initialize_clients():
             work_loads[client_id] = 0
             return client_id, client
         except Exception:
-            logging.error(f"Failed starting Client - {client_id} Error:", exc_info=True)
+            logging.error(f"Failed Starting Client - {client_id} Error:", exc_info=True)
     
     clients = await asyncio.gather(*[start_client(i, token) for i, token in all_tokens.items()])
     multi_clients.update(dict(clients))
@@ -42,4 +42,4 @@ async def initialize_clients():
         Var.MULTI_CLIENT = True
         print("Multi-Client Mode Enabled")
     else:
-        print("No additional clients were initialized, using default client")
+        print("No Additional Clients Were Initialized, Using Default Client")
