@@ -38,7 +38,6 @@ async def private_receive_handler(c: Client, m: Message):
         await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("STREAM ⚡", url=stream_link), #Stream Link
                                                 InlineKeyboardButton('DOWNLOAD ⚡', url=online_link)]]) #Download Link
         )
