@@ -34,10 +34,11 @@ async def private_receive_handler(c: Client, m: Message):
        
         msg_text ="""<i><u>Your Link Generated !</u></i>\n\n<b>📂 File Name :</b> <i>{}</i>\n\n<b>📦 File Size :</b> <i>{}</i>\n\n<b>🚸 Note : LINK WON'T EXPIRE TILL I DELETE</b>"""
 
-        await log_msg.reply_text(text=f"**Requested By :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**User ID :** `{m.from_user.id}`\n**Stream Link :** {stream_link}", quote=True)
+        await log_msg.reply_text(text=f"**Requested By :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**User ID :** `{m.from_user.id}`\n**Stream Link :** {stream_link}", disable_web_page_preview=True, quote=True)
         await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("STREAM ⚡", url=stream_link), #Stream Link
                                                 InlineKeyboardButton('DOWNLOAD ⚡', url=online_link)]]) #Download Link
         )
