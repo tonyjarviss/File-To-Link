@@ -74,7 +74,7 @@ async def help_handler(bot, message):
         await db.add_user(message.from_user.id)
         await bot.send_message(
             Var.BIN_CHANNEL,
-            f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!"
+            f"**--New User Started The Bot--**\n\nUser: {m.from_user.mention}\nUser ID: `{m.from_user.id}`\nUsername: @{m.from_user.username}"
         )
               
     await message.reply_photo(
@@ -97,7 +97,7 @@ async def about_handler(bot, message):
         await db.add_user(message.from_user.id)
         await bot.send_message(
             Var.BIN_CHANNEL,
-            f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!"
+            f"**--New User Started The Bot--**\n\nUser: {m.from_user.mention}\nUser ID: `{m.from_user.id}`\nUsername: @{m.from_user.username}"
         )
     await message.reply_photo(
             photo="https://graph.org/file/d1aa884d79172a1f5587c.jpg",
