@@ -59,7 +59,7 @@ async def private_receive_handler(c: Client, m: Message):
         await db.add_user(m.from_user.id)
         await c.send_message(
             Var.BIN_CHANNEL,
-            f"**--New User Started The Bot--**\n\nUser: {u.mention}\nUser ID: `{u.id}`\nUsername: @{u.username}\n\nDate: `{date}`\nTime: `{time}`\n\nBy: {b.mention}"
+            f"**--New User Started The Bot--**\n\nUser: {m.from_user.mention}\nUser ID: `{m.from_user.id}`\nUsername: @{m.from_user.username}"
         )
     if Var.UPDATES_CHANNEL != "None":
         try:
