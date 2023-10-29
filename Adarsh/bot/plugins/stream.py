@@ -144,8 +144,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Stream 🖥", url="https://t.me/Madflix_Bots"),
-                     InlineKeyboardButton('Download 📥', url="https://t.me/Madflix_Bots")] 
+                    [InlineKeyboardButton("Stream 🖥", url=stream_link),
+                     InlineKeyboardButton('Download 📥', url=online_link)] 
                 ]
             )
         )
