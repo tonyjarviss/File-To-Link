@@ -20,7 +20,7 @@ async def start(b, m):
         await db.add_user(m.from_user.id)
         await b.send_message(
             Var.BIN_CHANNEL,
-            f"#NEW_USER: \n\nNew User [{m.from_user.first_name}](tg://user?id={m.from_user.id}) Started !!"
+            f"**--New User Started The Bot--**\n\nUser: {m.from_user.mention}\nUser ID: `{m.from_user.id}`\nUsername: @{m.from_user.username}"
         )
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "/start":
